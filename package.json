@@ -9,7 +9,8 @@
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
+        "start:build": "npm run build && node scripts/start.js",
+        "start":"http-server dist",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
     "description": "A simple sidebar navigation HTMl template built with Bootstrap",
@@ -43,6 +44,7 @@
         "browser-sync": "2.29.1",
         "chokidar": "3.5.3",
         "concurrently": "6.3.0",
+        "http-server": "^14.1.1",
         "postcss": "8.4.21",
         "prettier": "2.8.6",
         "pug": "3.0.2",
